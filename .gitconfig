@@ -1,0 +1,12 @@
+[user]
+	name = toddmacintyre
+	email = toddmacintyre
+[alias]
+#  co = checkout
+#  ci = commit
+#  st = status
+#  br = branch
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+#  type = cat-file -t
+#  dump = cat-file -p
+  br = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
